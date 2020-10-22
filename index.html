@@ -11,39 +11,42 @@
   <div class="container">
     <h3>Find yourself.</h3>
     <form id="celebrity">
-      <form class="was-validated">
+
+      <!--<form class="was-validated">
         <div class="mb-6">
           <label for="name">What's your name?</label>
           <textarea class="form-control is-invalid" id="name" placeholder="Required example textarea" required></textarea>
           <div class="invalid-feedback">
             Please enter your name in the textarea.
           </div>
-        </div>
+        </div> 
+      </form>-->
+
       <label for="music">What music do you like?</label>
       <select id="music">
-        <option>Heavy Metal</option>
-        <option>Indy</option>
-        <option>Hip Hop</option>
-        <option>Country</option>
+        <option value="Heavy Metal">Heavy Metal</option>
+        <option value="Indy">Indy</option>
+        <option value="Downtempo">Downtempo</option>
       </select>
+
       <label for="movies">What movies do you like?</label>
       <select id="movies">
-        <option>Horror</option>
-        <option>Comedy</option>
-        <option>History</option>
-        <option>Musical</option>
+        <option value="Horror">Horror</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Drama">Drama</option>
       </select>
+
       <label for="books">What books do you like?</label>
       <select id="books">
-        <option>Autobiography</option>
-        <option>Fiction</option>
-        <option>Sci-Fi</option>
-        <option>Novels</option>
+        <option value="Autobiography">Autobiography</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Sci-Fi">Sci-Fi</option>
       </select>
+
       <button type="submit" class="btn btn-dark">Find me.</button>
-    </form>
+    
     <div id="result">
-      <p>You are like <span id="celeb">!!!</span></p>
+      <p>Hey You are like <span id="celeb">!!!</span></p>
     </div>
 
   </div>
