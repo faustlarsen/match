@@ -12,7 +12,7 @@
     <h3>Find yourself.</h3>
     <form id="celebrity">
 
-      <!--<form class="was-validated">
+      <form class="was-validated">
         <div class="mb-6">
           <label for="name">What's your name?</label>
           <textarea class="form-control is-invalid" id="name" placeholder="Required example textarea" required></textarea>
@@ -20,8 +20,7 @@
             Please enter your name in the textarea.
           </div>
         </div> 
-      </form>-->
-
+     
       <label for="music">What music do you like?</label>
       <select id="music">
         <option value="Heavy Metal">Heavy Metal</option>
@@ -43,11 +42,12 @@
         <option value="Sci-Fi">Sci-Fi</option>
       </select>
 
-      <button type="submit" class="btn btn-dark">Find me.</button>
+      <button type="submit" class="btn btn-dark">Find me</button>
     
     <div id="result">
-      <p>Hey You are like <span id="celeb">!!!</span></p>
+      <p>Hey <span class="name"></span>! You are like <span id="celeb"></span>!!!</p>
     </div>
+  </form>
 
   </div>
   </body>

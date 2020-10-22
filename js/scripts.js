@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $("#celebrity").submit(function(event) {
 
+let name = $("#name").val();
 let music = $("#music").val();
 let movies = $("#movies").val();
 let books = $("#books").val();
@@ -12,10 +13,11 @@ let celeb
   celeb = "Mr. Nigma";
   } else if (music === "Downtempo" && movies === "Drama" && books === "Sci-Fi") {
   celeb = "Great Gatsby";
-  } else (celeb = "Still you")
+  } else (celeb = "YOU")
+
+  $(".name").text(name);
   $("#celeb").text(celeb);
   $("#result").show();
-
     event.preventDefault();
   });
 });
